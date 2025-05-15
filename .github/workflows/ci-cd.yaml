@@ -16,4 +16,5 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
     - name: Build Docker image
-      run: docker build -t Actions albanmurtezaj/nodejs-demo-app .
+      run: docker buildx build -t albanmurtezaj/nodejs-demo-app .
+
